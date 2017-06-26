@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Eratosthene tool - let's find some prime numbers</h1>
+      <h3>HELP:</h3>
+      <ul>
+        <li>If MaxLimit is left empty: Max Limit will be set to 40</li>
+        <li>From: Setting a range to search - from</li>
+        <li>To: Setting a range to search - to</li>
+        <li>Specific number: select which number does the Prime number have to have in it</li>
+      </ul>
+    </header>
+    <div id="input-container">
+      <form id="input-form" method="POST">
+        <input type="text" class="inputs" name="max-limit" placeholder="Max Limit" id="max-limit">
+        <input type="text" class="inputs" name="from-filter" placeholder="From" id="from-filter">
+        <input type="text" class="inputs" name="to-filter" placeholder="To" id="to-filter">
+        <input type="text" class="inputs" name="spec-number" placeholder="Specific number" id="spec-number">
+        <input type="submit" class="submit" value="Find Primes" id="submit-button">
+      </form>
+    </div>
+    <div id="results-div"></div>
+  </body>
+</html>
